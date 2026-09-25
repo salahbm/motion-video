@@ -152,7 +152,7 @@ Suggested end line: **“From opportunity to bid workspace.”**
 
 ### Overall aesthetic
 
-Silka’s interface borrows the restraint and clarity of products such as Notion, Linear, and Cloudflare, while remaining more generous and approachable for procurement professionals who may use it for hours at a time.
+Silka’s interface borrows the restraint and clarity of products such as Notion, Linear, and Cloudflare, while remaining more generous and approachable for procurement professionals who may use it for hours at a time. This is the default language for recreated product UI—not a mandatory look for every frame of a motion video.
 
 Use:
 
@@ -165,6 +165,17 @@ Use:
 - Abstract backgrounds that feel soft and atmospheric, not loud
 
 Do not make the product look like a gaming dashboard, crypto platform, or futuristic AI control room.
+
+### Brand consistency versus creative freedom
+
+Video has two visual layers, and they should not be treated the same:
+
+1. **Product layer:** authentic Silka UI, UI labels, tables, cards, filters, documents, and product-derived interactions. Keep this layer faithful to the product’s current visual system so the app remains recognizable and trustworthy.
+2. **Story layer:** title cards, transitions, music-led sequences, abstract backgrounds, atmosphere, editorial typography, and cinematic scenes. This layer may use a wider palette, different typefaces, stronger contrast, texture, depth, and more expressive motion when it serves the story.
+
+The brand anchor should survive creative variation through the Silka name/mark, truthful product story, calm and capable tone, clear hierarchy, and a recognizable moment of product UI. Do not force every scene to use the same orange, neutral surface, layout, or font.
+
+For a social reel, it is acceptable for the visual language to shift by beat—for example, a dark cinematic opening, a vivid motivational title, and a restrained product demonstration—provided the transition back to Silka feels intentional.
 
 ### Composition
 
@@ -207,9 +218,9 @@ Logo usage:
 - Preserve the mark’s geometry; do not stretch, squash, rotate for decoration, or rebuild it with unrelated effects.
 - The wordmark is written **Silka**, not SILKA, except when a typographic treatment explicitly requires capitals.
 
-### Typography
+### Typography for product UI
 
-**Primary typeface: Manrope.**
+**Primary product typeface: Manrope.**
 
 Use Manrope for headlines, UI labels, body copy, captions, and end cards. The type should feel modern, open, and highly legible across English, Russian, and Uzbek.
 
@@ -221,11 +232,24 @@ Recommended hierarchy:
 - Explanatory copy: regular 400
 - Small metadata: regular or medium, never too small to read in motion
 
-Keep headlines short. Do not use extremely condensed, techno, handwritten, or high-fashion display fonts as the primary voice.
+Keep product/UI headlines short. Do not use extremely condensed, techno, handwritten, or high-fashion display fonts inside recreated product UI unless the real product uses them.
 
-### Color direction
+### Typography for motion storytelling
 
-The interface is intentionally neutral. Silka orange is a controlled brand accent, not an all-over background color.
+Motion titles do not have to use Manrope. A display font from [`fonts/FONTS_MANUAL.md`](../fonts/FONTS_MANUAL.md) may be used for a specific narrative role—such as a cinematic title, emotional quote, music-led reel, festival beat, fashion moment, or playful hook—when it is licensed for the intended use.
+
+Use display fonts selectively:
+
+- Keep them to short phrases, names, numbers, or emphasis words.
+- Pair expressive display type with a legible supporting font.
+- Match the font’s personality to the music, audience, and scene rather than to the app UI.
+- Return to Manrope or another highly legible neutral face for product details, captions, URLs, and legal copy.
+
+The goal is a recognizable Silka voice, not typographic uniformity across every frame.
+
+### Color direction for product UI
+
+The interface is intentionally neutral. Silka orange is a controlled product accent, not an all-over background color. These rules apply when recreating the product UI.
 
 | Role                             | Current product direction                              | Use in motion                                                      |
 | -------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------ |
@@ -239,7 +263,21 @@ The interface is intentionally neutral. Silka orange is a controlled brand accen
 
 Source of truth for implementation colors: [`apps/web/src/styles/globals.css`](../apps/web/src/styles/globals.css). Use those tokens when recreating UI rather than inventing new hex values.
 
-Color rule: **neutral foundation, orange emphasis, semantic color only when it carries meaning.**
+Product UI color rule: **neutral foundation, orange emphasis, semantic color only when it carries meaning.**
+
+### Color direction for motion storytelling
+
+Narrative and abstract video scenes may use an expanded palette. Dark navy, orange, amber, pale neutrals, saturated gradients, muted earth tones, or music-responsive color can all be appropriate if they support the story and maintain readability.
+
+When the scene is not showing actual product UI:
+
+- Use color to establish mood, pace, contrast, and chapter changes.
+- Let the soundtrack and subject matter influence the palette.
+- Keep the Silka orange, mark, or product UI as an anchor when brand recognition matters.
+- Avoid using the full product palette merely for decoration.
+- Check contrast at phone scale and keep CTA/URL colors accessible.
+
+Motion color rule: **brand recognition is required; a fixed palette is not.**
 
 ## 8. Motion language
 
@@ -253,6 +291,7 @@ Silka motion should feel like information becoming organized.
 - **Connected:** Move related UI as a group so the viewer understands continuity.
 - **Responsive:** Let important information settle quickly; the product should feel efficient.
 - **Human:** Use a little warmth in the easing and pacing, but keep the result professional.
+- **Adaptable:** Let the scene’s music, message, platform, and emotional beat influence the palette, typography, composition, and motion intensity.
 
 ### Good motion behaviors
 
@@ -317,8 +356,10 @@ Before final delivery, check:
 - The story shows a real workflow, not a collection of disconnected screens.
 - UI copy is large enough to read on the target platform.
 - The logo is used with clear space and correct proportions.
-- Orange is reserved for brand emphasis and meaningful moments.
-- The motion feels calm, precise, and useful.
+- Product UI uses the approved interface tokens; narrative scenes may use a wider palette when it supports the story.
+- Typography is legible for information and intentionally expressive for short narrative titles when licensed.
+- The motion feels appropriate to the beat—calm and precise for product actions, more expressive when the story or music calls for it.
+- Creative variation still preserves a recognizable Silka anchor through the mark/name, truthful product story, and clear hierarchy.
 - Any match score, deadline, status, or notification shown is clearly illustrative or comes from approved product data.
 - The video does not promise a tender award or imply that Silka processes expert-service payments.
 - The final frame includes the Silka wordmark, a concise message, and the approved URL or CTA.
