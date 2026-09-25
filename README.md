@@ -35,15 +35,16 @@ If Remotion cannot download its bundled Chrome, pass a locally installed Chrome 
 
 ### Remotion UI components
 
-[RemotionUI](https://remotionui.com/docs/components/browse) is an optional registry of source components for Remotion. Browse it by the motion needed for a scene, then install only selected components into this project with its CLI. For example, a later tender-search scene may benefit from `search-results-populate`, while `kanban-move` could support a tasks beat. Adapt any copied component to authentic Silka UI and approved content. No RemotionUI component is required by this starter.
+[RemotionUI](https://remotionui.com/docs/components/browse) is configured in [remotion-ui.json](remotion-ui.json). Browse the registry by the motion needed for a scene, then add selected components with its CLI. The CLI copies component source into `src/` and installs any dependencies it needs. For example, a later tender-search scene may benefit from `search-results-populate`, while `kanban-move` could support a tasks beat. Adapt copied product scenes to authentic Silka UI and approved content.
 
-When a component is needed, initialize the registry in this existing project, add the chosen component, and validate its setup:
+When a component is needed, add it and validate the setup:
 
 ```bash
-bunx remotion-ui@latest init --existing --no-agent-skill
 bunx remotion-ui@latest add kanban-move
 bunx remotion-ui@latest doctor
 ```
+
+The diagnostic may note that registry component folders are absent until the first component is added.
 
 ## Manuals
 
