@@ -205,11 +205,10 @@ The Silka mark is geometric and directional, built from interlocking forms with 
 
 Existing assets:
 
-- [Light logo](../apps/web/public/logos/logo.png) — orange mark for light surfaces
-- [Night logo](../apps/web/public/logos/logo_night.png) — orange mark with deep navy/dark treatment for dark surfaces
-- [Login background](../apps/web/public/images/login-background.webp) — soft, pale abstract background
-- [Register background](../apps/web/public/images/register-background.webp) — soft, pale abstract background
-- [Manrope font files](../apps/web/public/fonts/) — regular, 500, 600, and 700 weights
+- [Light logo](logo_light.png) — orange mark for light surfaces
+- [Night logo](logo_dark.png) — orange mark with deep navy/dark treatment for dark surfaces
+
+The current Silka application has login and registration backgrounds and Manrope font files; those application files are not included in this motion workspace. The Remotion starter bundles Manrope through `@fontsource/manrope`.
 
 Logo usage:
 
@@ -364,14 +363,3 @@ Before final delivery, check:
 - The video does not promise a tender award or imply that Silka processes expert-service payments.
 - The final frame includes the Silka wordmark, a concise message, and the approved URL or CTA.
 - English, Russian, and Uzbek versions are planned if the video will be used across the customer application’s markets.
-
-## 11. Source references
-
-- [Product overview](../apps/web/public/docs/product-overview.md)
-- [Tender discovery](../apps/web/public/docs/tender-discovery.md)
-- [Tender workspaces](../apps/web/public/docs/tender-workspaces.md)
-- [Expert directory](../apps/web/public/docs/expert-directory.md)
-- [Company directory](../apps/web/public/docs/company-directory.md)
-- [Current feature inventory](./features.md)
-- [Web design system](../apps/web/.agents/skills/web-design-system/SKILL.md)
-- [UI motion rules](../apps/web/.agents/skills/ui-motion/SKILL.md)
