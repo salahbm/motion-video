@@ -15,25 +15,35 @@ This workspace collects the visual and audio assets used to build Silka motion v
 
 ## Remotion starter
 
-This repository is a Remotion project with a five-second Silka intro in landscape and portrait formats. The intro uses the approved mark, Manrope, and one line from the brand brief. It is a small starter composition, not a product UI mockup.
+This repository is a Remotion project with a five-second Silka intro in landscape and portrait formats. The intro uses the approved mark and one line from the brand brief. Its type and palette are choices for this sample title card, not product UI rules.
 
 ```bash
-npm install
-npm run dev
+bun install
+bun run dev
 ```
 
 Remotion Studio lists `SilkaIntroLandscape` (1920 × 1080) and `SilkaIntroPortrait` (1080 × 1920), both at 30 fps. To export either one:
 
 ```bash
-npm run render:landscape
-npm run render:portrait
+bun run render:landscape
+bun run render:portrait
 ```
 
-Outputs go to the ignored `out/` directory. Run `npm run typecheck` after editing composition code. Assets under `public/` are available to Remotion through `staticFile()`, using paths relative to `public/` such as `staticFile('brand/logo_light.png')`. Select music and sound effects through their manuals and check usage rights before publishing.
+Outputs go to the ignored `out/` directory. Run `bun run typecheck` after editing composition code. Assets under `public/` are available to Remotion through `staticFile()`, using paths relative to `public/` such as `staticFile('brand/logo_light.png')`. Select music and sound effects through their manuals and check usage rights before publishing.
+
+If Remotion cannot download its bundled Chrome, pass a locally installed Chrome executable to a render command, for example `bun run render:landscape --browser-executable='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'` on macOS.
 
 ### Remotion UI components
 
 [RemotionUI](https://remotionui.com/docs/components/browse) is an optional registry of source components for Remotion. Browse it by the motion needed for a scene, then install only selected components into this project with its CLI. For example, a later tender-search scene may benefit from `search-results-populate`, while `kanban-move` could support a tasks beat. Adapt any copied component to authentic Silka UI and approved content. No RemotionUI component is required by this starter.
+
+When a component is needed, initialize the registry in this existing project, add the chosen component, and validate its setup:
+
+```bash
+bunx remotion-ui@latest init --existing --no-agent-skill
+bunx remotion-ui@latest add kanban-move
+bunx remotion-ui@latest doctor
+```
 
 ## Manuals
 

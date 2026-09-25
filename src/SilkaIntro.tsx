@@ -1,5 +1,3 @@
-import '@fontsource/manrope/400.css';
-import '@fontsource/manrope/700.css';
 import {
   AbsoluteFill,
   Img,
@@ -32,7 +30,7 @@ export const SilkaIntro = () => {
       style={{
         backgroundColor: '#f7f6f3',
         color: '#20232a',
-        fontFamily: 'Manrope, sans-serif',
+        fontFamily: 'Arial, sans-serif',
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',

@@ -7,7 +7,7 @@ This repository is an asset-first motion-video workspace for Silka. It contains 
 ## Source of truth
 
 - Read [`public/brand/brand-info.md`](public/brand/brand-info.md) before creating Silka-facing copy, visuals, UI scenes, or logo treatments.
-- Apply the brand brief in layers: keep authentic product UI faithful, but allow narrative video scenes to vary in palette, typography, composition, and motion when the story requires it.
+- Apply product fonts, colors, layout, and interaction styling only when recreating exact Silka UI. Narrative scenes, captions, transitions, and end cards have no required product visual style.
 - Use [`public/sound-effects/SOUND_EFFECTS_MANUAL.md`](public/sound-effects/SOUND_EFFECTS_MANUAL.md) when selecting sound effects.
 - Use [`public/songs/MUSIC_REELS_MANUAL.md`](public/songs/MUSIC_REELS_MANUAL.md) when selecting music.
 - Use [`public/fonts/FONTS_MANUAL.md`](public/fonts/FONTS_MANUAL.md) when selecting display fonts or checking font licensing.
@@ -26,10 +26,10 @@ This repository is an asset-first motion-video workspace for Silka. It contains 
 
 ## Brand and content rules
 
-- Silka should feel calm, precise, professional, helpful, modern, and collaborative.
+- Keep Silka product claims and naming accurate; narrative visual style is a creative choice.
 - Prefer authentic product UI, truthful product facts, and approved brand assets.
 - Do not promise that a bid will be won; show clarity, preparation, collaboration, and readiness.
-- Avoid hype, “magic,” “revolutionary,” “guaranteed,” and generic futuristic-AI imagery unless the user explicitly asks for it.
+- Avoid unsupported claims such as “guaranteed.” Narrative imagery and motion style are creative choices.
 
 ## Implementation workflow
 
